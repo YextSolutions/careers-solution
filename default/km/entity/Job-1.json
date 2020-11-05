@@ -1,0 +1,25 @@
+{
+  "$id": "Job-1",
+  "$schema": "https://schema.yext.com/config/km/entity/v1",
+  "content": {
+    "c_activeInAnswers": true,
+    "c_department": "Operations",
+    "c_primaryCTA": {
+      "label": "Apply Now",
+      "link": "www.yext.com",
+      "linkType": "OTHER"
+    },
+    "yext/datePosted": "2020-09-21",
+    "yext/description": "The customer journey starts with a question. And consumers expect answers. Yext puts businesses in control of their facts online with brand-verified answers in search. By serving accurate, consistent, brand-verified answers to consumer questions, Yext delivers authoritative information straight from the source — the business itself — no matter where or how customers are searching. Taco Bell, Marriott, Jaguar Land Rover, and businesses around the globe use the Yext platform to capture consumer intent and drive digital discovery, engagement, and revenue — all from a single source of truth. Yext’s mission is to provide perfect answers everywhere.\n\nOur team is looking for people who are fired up and love coming to work every day. We are building a market and educating clients on the power of data, as we work to hit aggressive goals. We like to spend time together - we work hard and play hard.",
+    "yext/employmentType": "FULL_TIME",
+    "yext/hiringOrganization": "Yext",
+    "yext/jobLocation": "Loc1",
+    "yext/location": {
+      "existingLocation": "Loc1"
+    },
+    "yext/name": "Platform Manager",
+    "yext/validThrough": "2021-09-01T09:00"
+  },
+  "entityType": "yext/job",
+  "labels": []
+}

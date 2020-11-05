@@ -1,0 +1,144 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "answers_careers_template",
+  "name": "Answers Careers Template",
+  "supportedLocales": [],
+  "countryRestrictions": [],
+  "verticals": {
+    "Events": {
+      "entityTypes": [
+        "event"
+      ],
+      "name": "Events",
+      "savedSearchId": "63880968",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_answersKeywords": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "Jobs": {
+      "entityTypes": [
+        "job"
+      ],
+      "name": "Jobs",
+      "savedSearchId": "54902431",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_answersKeywords": {
+          "textSearch": true
+        },
+        "c_department": {
+          "facet": true,
+          "textSearch": true
+        },
+        "employmentType": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "faqs": {
+      "entityTypes": [
+        "faq"
+      ],
+      "name": "FAQs",
+      "savedSearchId": "40233348",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "c_answersKeywords": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "links": {
+      "apiKey": "REPLACE_API_KEY",
+      "cx": "REPLACE_CX_KEY",
+      "name": "Links",
+      "siteRestricted": false,
+      "source": "GOOGLE_CSE",
+      "useSynonyms": "ALL_SYNONYMS"
+    },
+    "locations": {
+      "entityTypes": [
+        "location"
+      ],
+      "name": "Locations",
+      "savedSearchId": "40238747",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true,
+          "textSearch": true
+        },
+        "c_answersKeywords": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "autocomplete": {
+    "disablePopularQueries": false,
+    "hardcodedPrompts": [
+      "Jobs near me",
+      "Are you hiring?",
+      "FAQs",
+      "Recruiting Events"
+    ]
+  },
+  "synonyms": {
+    "oneWay": [],
+    "synonymSet": [
+      [
+        "location",
+        "office",
+        "offices",
+        "restaurant",
+        "restaurants",
+        "store",
+        "stores",
+        "place",
+        "facility"
+      ],
+      [
+        "faq",
+        "question",
+        "frequently asked questions"
+      ],
+      [
+        "job",
+        "career",
+        "employment"
+      ]
+    ]
+  },
+  "localizations": {}
+}
