@@ -5,8 +5,13 @@
   "filter": {
     "entityField": [
       {
-        "fieldId": "yext/closed",
-        "searchBool": "FALSE"
+        "fieldId": "c_activeInAnswers",
+        "filterOption": {
+          "choice": [
+            "NO"
+          ],
+          "type": "IS_NOT"
+        }
       }
     ],
     "entityType": [
