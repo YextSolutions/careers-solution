@@ -15,7 +15,7 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "c_answersKeywords": {
+        "keywords": {
           "textSearch": true
         },
         "name": {
@@ -35,7 +35,7 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "c_answersKeywords": {
+        "keywords": {
           "textSearch": true
         },
         "c_department": {
@@ -62,7 +62,7 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "c_answersKeywords": {
+        "keywords": {
           "textSearch": true
         },
         "name": {
@@ -94,7 +94,7 @@
           "nlpFilter": true,
           "textSearch": true
         },
-        "c_answersKeywords": {
+        "keywords": {
           "textSearch": true
         },
         "name": {
