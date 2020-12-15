@@ -1,12 +1,12 @@
 {
-  "$id": "Events_-_Title_Clicks_1607044427",
+  "$id": "4557",
   "$schema": "https://schema.yext.com/config/analytics/conversion-action/v2",
-  "conversionName": "Events - Title Clicks",
-  "conversionType": "SIGN_UP",
+  "conversionName": "Jobs - Title Clicks",
+  "conversionType": "COST_SAVING_CUSTOMER_SUPPORT",
   "conversionValueType": "SAME",
-  "conversionValueAmount": 5.0,
+  "conversionValueAmount": 50.0,
   "conversionTerm": {
-    "startDate": "2020-08-27"
+    "startDate": "2020-09-27"
   },
   "conversionTrigger": {
     "clickTriggers": [
@@ -14,7 +14,7 @@
         "clickType": "TITLE",
         "entityFilter": {
           "entityTypeIn": [
-            "yext/event"
+            "yext/job"
           ]
         },
         "media": [
