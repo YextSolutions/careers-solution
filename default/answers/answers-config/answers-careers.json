@@ -6,6 +6,14 @@
   "countryRestrictions": [],
   "verticals": {
     "Events": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "address",
+            "time"
+          ]
+        }
+      },
       "entityTypes": [
         "event"
       ],
@@ -15,14 +23,26 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         },
-        "name": {
+        "time.start": {
+          "sortable": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
-      "sortBys": [],
+      "sortBys": [
+        {
+          "type": "RELEVANCE"
+        },
+        {
+          "direction": "ASC",
+          "field": "time.start",
+          "type": "FIELD"
+        }
+      ],
       "source": "KNOWLEDGE_MANAGER"
     },
     "Jobs": {
@@ -35,17 +55,19 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "keywords": {
-          "textSearch": true
-        },
-        "c_department": {
-          "facet": true,
-          "textSearch": true
+        "builtin.location": {
+          "nlpFilter": true
         },
         "employmentType": {
           "textSearch": true
         },
+        "hiringOrganization": {
+          "textSearch": true
+        },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -81,6 +103,13 @@
       "useSynonyms": "ALL_SYNONYMS"
     },
     "locations": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "mainPhone"
+          ]
+        }
+      },
       "entityTypes": [
         "location"
       ],
