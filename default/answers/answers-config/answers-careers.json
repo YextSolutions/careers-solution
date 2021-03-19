@@ -91,8 +91,7 @@
           "nlpFilter": true
         },
         "builtin.location": {
-          "nlpFilter": true,
-          "textSearch": true
+          "nlpFilter": true
         },
         "keywords": {
           "textSearch": true
@@ -105,14 +104,33 @@
       "source": "KNOWLEDGE_MANAGER"
     }
   },
-  "autocomplete": {
-    "disablePopularQueries": false,
-    "hardcodedPrompts": [
-      "Jobs near me",
+  "querySuggestions": {
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "open jobs near me",
+      "What is Yext?",
       "Are you hiring?",
-      "FAQs",
-      "Recruiting Events"
-    ]
+      "Recruiting events",
+      "Locations near me"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "locations": [
+        "Locations near [[address.city]]",
+        "Locations near [[address.region]]",
+        "Locations near me"
+      ],
+      "Jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "Events": [
+        "events in [[address.city]]",
+        "upcoming virtual events"
+      ]
+    }
   },
   "synonyms": {
     "oneWay": [],
@@ -140,5 +158,6 @@
       ]
     ]
   },
-  "localizations": {}
+  "localizations": {},
+  "additionalSearchablePlaces": []
 }
