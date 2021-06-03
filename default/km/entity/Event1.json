@@ -6,14 +6,14 @@
     "yext/address": {
       "city": "New York",
       "countryCode": "US",
-      "line1": "1 Madison Ave",
-      "postalCode": "10010",
+      "line1": "61 9th Ave",
+      "postalCode": "10011",
       "region": "NY"
     },
     "yext/description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Purus faucibus ornare suspendisse sed nisi lacus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.",
     "yext/landingPageUrl": "https://www.yext.com",
     "yext/linkedLocation": "Loc1",
-    "yext/name": "Event",
+    "yext/name": "Event 1",
     "yext/ticketUrl": "https://www.yext.com",
     "yext/time": {
       "end": "2020-03-16T17:00",

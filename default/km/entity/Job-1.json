@@ -14,6 +14,7 @@
     "yext/employmentType": "FULL_TIME",
     "yext/hiringOrganization": "Yext",
     "yext/jobLocation": "Loc1",
+    "yext/landingPageUrl": "https://www.yext.com",
     "yext/location": {
       "existingLocation": "Loc1"
     },
