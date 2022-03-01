@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "entityTypeSettings": [
+    {
+      "entityType": "event",
+      "disabled": false
+    },
+    {
+      "entityType": "faq",
+      "disabled": false
+    },
+    {
+      "entityType": "job",
+      "disabled": false
+    },
+    {
+      "entityType": "location",
+      "disabled": false
+    }
+  ]
+} 
