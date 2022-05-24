@@ -11,7 +11,8 @@
           "eligibleFields": [
             "address",
             "time"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -23,21 +24,31 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
+        "keywords": {
+          "textSearch": true
+        },
         "name": {
           "textSearch": true
         },
         "time.start": {
           "sortable": true
-        },
-        "keywords": {
-          "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "events",
+        "recruiting events",
+        "upcoming events",
+        "conference"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [
         {
+          "buckets": [],
           "type": "RELEVANCE"
         },
         {
+          "buckets": [],
           "direction": "ASC",
           "field": "time.start",
           "type": "FIELD"
@@ -67,13 +78,20 @@
         "hiringOrganization": {
           "textSearch": true
         },
-        "name": {
+        "keywords": {
           "textSearch": true
         },
-        "keywords": {
+        "name": {
           "textSearch": true
         }
       },
+      "semanticVerticalBias": 0.1,
+      "semanticVerticalIntents": [
+        "jobs",
+        "open jobs",
+        "careers"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -94,6 +112,11 @@
           "semanticTextSearch": true
         }
       },
+      "semanticVerticalIntents": [
+        "faqs",
+        "questions"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
     },
@@ -101,6 +124,7 @@
       "apiKey": "REPLACE_API_KEY",
       "cx": "REPLACE_CX_KEY",
       "name": "Links",
+      "semanticVerticalIntents": [],
       "siteRestricted": false,
       "source": "GOOGLE_CSE",
       "useSynonyms": "ALL_SYNONYMS"
@@ -110,7 +134,8 @@
         "fieldValues": {
           "eligibleFields": [
             "mainPhone"
-          ]
+          ],
+          "predictionMode": "CLASSIFIER"
         }
       },
       "entityTypes": [
@@ -132,36 +157,14 @@
           "textSearch": true
         }
       },
+      "semanticVerticalIntents": [
+        "locations near me",
+        "locations",
+        "offices"
+      ],
+      "semanticVerticalThreshold": 0.2,
       "sortBys": [],
       "source": "KNOWLEDGE_MANAGER"
-    }
-  },
-  "querySuggestions": {
-    "popularQueriesBlacklistedTerms": [],
-    "universalPrompts": [
-      "open jobs near me",
-      "FAQs",
-      "Are you hiring?",
-      "Recruiting events",
-      "Locations near me"
-    ],
-    "verticalPrompts": {
-      "faqs": [
-        "[[name]]"
-      ],
-      "locations": [
-        "Locations near [[address.city]]",
-        "Locations near [[address.region]]",
-        "Locations near me"
-      ],
-      "Jobs": [
-        "[[name]]",
-        "open jobs near me"
-      ],
-      "Events": [
-        "events in [[address.city]]",
-        "upcoming virtual events"
-      ]
     }
   },
   "synonyms": {
@@ -191,5 +194,35 @@
     ]
   },
   "localizations": {},
-  "additionalSearchablePlaces": []
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "open jobs near me",
+      "FAQs",
+      "Are you hiring?",
+      "Recruiting events",
+      "Locations near me"
+    ],
+    "verticalPrompts": {
+      "Events": [
+        "events in [[address.city]]",
+        "upcoming virtual events"
+      ],
+      "Jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "faqs": [
+        "[[name]]"
+      ],
+      "locations": [
+        "Locations near [[address.city]]",
+        "Locations near [[address.region]]",
+        "Locations near me"
+      ]
+    }
+  }
 }
